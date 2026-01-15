@@ -1,71 +1,681 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="uk">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Freestyle Studio – Безкоштовні веб-послуги</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Freestyle Studio – Безкоштовні веб-послуги</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Основні мета-теги -->
+    <meta
+      name="description"
+      content="Freestyle Studio — створення сайтів WordPress, SEO, чат-боти та діджитал-маркетинг. Безкоштовні та бюджетні рішення для малого бізнесу, волонтерських проєктів і стартапів в Україні."
+    />
+    <meta name="author" content="Freestyle Studio" />
+    <meta
+      name="keywords"
+      content="створення сайтів, WordPress, SEO, чат-боти, розробка сайтів, маркетинг, запуск бізнесу онлайн, цифрові рішення, сайт-візитка, лендинг WordPress, бізнес сайт Україна, безкоштовні послуги, веброзробка, digital агентство, волонтерські IT послуги"
+    />
+
+    <!-- Open Graph для Facebook / LinkedIn -->
+    <meta
+      property="og:title"
+      content="Freestyle Studio — WordPress сайти, SEO та чат-боти для вашого бізнесу"
+    />
+    <meta
+      property="og:description"
+      content="Запускаємо сайти, SEO, рекламу і чат-ботів. Від безкоштовних рішень до індивідуальних digital-проєктів. Підтримка малих бізнесів, стартапів і волонтерських ініціатив."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://freestyle.org.ua/" />
+    <meta property="og:image" content="https://freestyle.org.ua/preview.png" />
+    <meta property="og:locale" content="uk_UA" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Freestyle Studio — сайти WordPress, SEO та чат-боти"
+    />
+    <meta
+      name="twitter:description"
+      content="Сайт під ключ, SEO, маркетинг і чат-боти. Доступні рішення для бізнесу і волонтерів."
+    />
+    <meta name="twitter:image" content="https://freestyle.org.ua/preview.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    >
 
 
-  <!-- Основні мета-теги -->
-  <meta name="description" content="Freestyle Studio — створення сайтів WordPress, SEO, чат-боти та діджитал-маркетинг. Безкоштовні та бюджетні рішення для малого бізнесу, волонтерських проєктів і стартапів в Україні.">
-  <meta name="author" content="Freestyle Studio">
-  <meta name="keywords" content="створення сайтів, WordPress, SEO, чат-боти, розробка сайтів, маркетинг, запуск бізнесу онлайн, цифрові рішення, сайт-візитка, лендинг WordPress, бізнес сайт Україна, безкоштовні послуги, веброзробка, digital агентство, волонтерські IT послуги">
+  </head>
+  <body>
+    <!-- Навігація -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm"
+    >
+      <div class="container">
+        <!-- Логотип -->
+        <a class="navbar-brand fw-bold" href="#">
+          <span class="logo-freestyle">Freestyle</span>
+          <span class="logo-studio"> Studio</span>
+        </a>
 
-  <!-- Open Graph для Facebook / LinkedIn -->
-  <meta property="og:title" content="Freestyle Studio — WordPress сайти, SEO та чат-боти для вашого бізнесу">
-  <meta property="og:description" content="Запускаємо сайти, SEO, рекламу і чат-ботів. Від безкоштовних рішень до індивідуальних digital-проєктів. Підтримка малих бізнесів, стартапів і волонтерських ініціатив.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://freestyle.org.ua/">
-  <meta property="og:image" content="https://freestyle.org.ua/preview.jpg">
-  <meta property="og:locale" content="uk_UA">
+        <!-- Burger -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainMenu"
+          aria-controls="mainMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Freestyle Studio — сайти WordPress, SEO та чат-боти">
-  <meta name="twitter:description" content="Сайт під ключ, SEO, маркетинг і чат-боти. Доступні рішення для бізнесу і волонтерів.">
-  <meta name="twitter:image" content="https://freestyle.org.ua/preview.jpg">
+        <!-- Меню -->
+        <div class="collapse navbar-collapse" id="mainMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Послуги</a>
+            </li>
 
+            <li class="nav-item">
+              <a class="nav-link" href="#process">Як працюємо</a>
+            </li>
 
+            <li class="nav-item">
+              <a class="nav-link" href="#why-free">Чому безкоштовно</a>
+            </li>
 
-  <style>
-    .hero {
-      /* фон – змінити на потрібне зображення чи градієнт */
-      background: linear-gradient(135deg, #a98202, #989479);
-      color: #fff;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-    }
-    .hero .btn-cta {
-      padding: 0.75rem 1.5rem;
-      font-size: 1.1rem;
-    }
-    @media (max-width: 767.98px) {
-      .hero {
-        text-align: center;
-      }
-    }
-  </style>
-</head>
-<body>
+            <li class="nav-item">
+              <a class="nav-link" href="#cases">Кейси</a>
+            </li>
 
-  <section class="hero">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <h1 class="display-4 fw-bold">Створення сайтів, SEO, чат-боти, маркетинг</h1>
-          <p class="lead mt-4">Безкоштовні послуги у сфері створення сайтів WordPress, SEO-оптимізації, чат-ботів та маркетингу.</p>
-          <a href="#contact" class="btn btn-primary btn-cta mt-3">Подати заявку</a>
-        </div>
-        <div class="col-md-6 d-none d-md-block">
-          <!-- Тут можна вставити зображення -->
-          <img src="images/hero.png" alt="Freestyle Studio – послуги" class="img-fluid">
+            <li class="nav-item mt-3 ms-lg-3 mt-lg-0">
+              <a class="btn btn-primary btn-sm px-3" href="#contact">
+                Подати заявку
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <!-- Hero -->
+    <section class="hero py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h1 class="display-4 fw-bold">
+              Створення сайтів, SEO, чат-боти, маркетинг
+            </h1>
+            <p class="lead mt-4">
+              Безкоштовні послуги у сфері створення сайтів WordPress,
+              SEO-оптимізації, чат-ботів та маркетингу.
+            </p>
+            <a href="#contact" class="btn btn-primary btn-cta mt-3"
+              >Подати заявку</a
+            >
+          </div>
+          <div class="col-md-6">
+            <!-- зображення -->
+            <img
+              src="images/hero.png"
+              alt="Freestyle Studio – послуги"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- For who -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">
+            Ми допомагаємо тим, кому важко стартувати онлайн
+          </h2>
+          <p class="lead mt-3">
+            Freestyle Studio - це доступні digital-рішення для бізнесу,
+            стартапів і соціальних ініціатив.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm bg-light">
+              <div class="card-body">
+                <h5 class="card-title">Малий бізнес</h5>
+                <p class="card-text">
+                  Сайт і базове SEO, щоб вас почали знаходити клієнти.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm bg-light">
+              <div class="card-body">
+                <h5 class="card-title">Стартапи</h5>
+                <p class="card-text">
+                  Лендинг або MVP для перевірки ідеї без великих витрат.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm bg-light">
+              <div class="card-body">
+                <h5 class="card-title">Волонтерські проєкти</h5>
+                <p class="card-text">
+                  Безкоштовні або пільгові рішення для корисних ініціатив.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm bg-light">
+              <div class="card-body">
+                <h5 class="card-title">Експерти</h5>
+                <p class="card-text">
+                  Сайт-візитка і заявки для особистого бренду.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-5 bg-light" id="services">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Наші послуги - просто і по суті</h2>
+          <p class="lead mt-3">
+            Запуск сайтів, SEO та автоматизація - щоб ви отримували клієнтів
+            онлайн без складних рішень.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title">Сайти на WordPress</h3>
+                <p class="card-text">
+                  Щоб про вас дізнались, довіряли і могли легко залишити заявку.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title">SEO-оптимізація</h3>
+                <p class="card-text">
+                  Щоб ваш сайт знаходили в Google і клієнти приходили самі.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title">Чат-боти</h3>
+                <p class="card-text">
+                  Щоб не відповідати на одні й ті самі питання і не втрачати
+                  звернення.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title">Маркетинг і запуск</h3>
+                <p class="card-text">
+                  Щоб з’явилися перші клієнти навіть з мінімальним бюджетом.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-center mt-4 text-muted">
+          Ми підбираємо рішення під вашу ситуацію - без нав’язування і зайвих
+          витрат.
+        </p>
+      </div>
+    </section>
+
+    <!-- Steps -->
+    <section class="py-5" id="process">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Як це працює - 4 простих кроки</h2>
+          <p class="lead mt-3">
+            Шлях від ідеї до результату - без складних процесів і зайвого тиску.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0">
+              <div class="card-body">
+                <div class="fw-bold mb-2" style="color: #a98202">Крок 1</div>
+                <h3 class="h5 card-title">Ви залишаєте заявку</h3>
+                <p class="card-text">
+                  Коротко описуєте, що вам потрібно: сайт, SEO, чат-бот або
+                  консультація.
+                </p>
+                <small class="text-muted">Безкоштовно і без зобов’язань</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0">
+              <div class="card-body">
+                <div class="fw-bold mb-2" style="color: #a98202">Крок 2</div>
+                <h3 class="h5 card-title">Ми консультуємо</h3>
+                <p class="card-text">
+                  Розбираємо вашу ситуацію і пояснюємо можливі варіанти простими
+                  словами.
+                </p>
+                <small class="text-muted">Без технічного жаргону</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0">
+              <div class="card-body">
+                <div class="fw-bold mb-2" style="color: #a98202">Крок 3</div>
+                <h3 class="h5 card-title">Пропонуємо рішення</h3>
+                <p class="card-text">
+                  Підбираємо оптимальний формат - безкоштовний, бюджетний або
+                  поетапний.
+                </p>
+                <small class="text-muted">Ви самі приймаєте рішення</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0">
+              <div class="card-body">
+                <div class="fw-bold mb-2" style="color: #a98202">Крок 4</div>
+                <h3 class="h5 card-title">Реалізуємо або підказуємо</h3>
+                <p class="card-text">
+                  Запускаємо проєкт або чесно радимо подальші кроки.
+                </p>
+                <small class="text-muted">Фокус на результат</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-center mt-4 text-muted">
+          Ми працюємо у вашому темпі і поважаємо ваші ресурси.
+        </p>
+      </div>
+    </section>
+
+    <!-- Why free or cheep -->
+    <section class="py-5 bg-light" id="why-free">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">
+            Чому ми працюємо безкоштовно або за мінімальну вартість
+          </h2>
+          <p class="lead mt-3">
+            Freestyle Studio - це про розвиток, навчання і підтримку, а не про
+            агресивні продажі.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="mb-4">
+              <h3 class="h5 fw-semibold" style="color: #a98202">
+                Соціальна і волонтерська складова
+              </h3>
+              <p>
+                Частину проєктів ми робимо безкоштовно - для волонтерських,
+                соціальних та освітніх ініціатив. Ми віримо, що digital-рішення
+                можуть приносити користь не лише бізнесу.
+              </p>
+            </div>
+
+            <div class="mb-4">
+              <h3 class="h5 fw-semibold" style="color: #a98202">
+                Навчання і практика
+              </h3>
+              <p>
+                Ми постійно навчаємось і працюємо з реальними проєктами, щоб
+                покращувати якість рішень. Клієнт отримує робочий результат, ми
+                - досвід і портфоліо.
+              </p>
+            </div>
+
+            <div class="mb-4">
+              <h3 class="h5 fw-semibold" style="color: #a98202">
+                Чесна співпраця
+              </h3>
+              <p>
+                Ми не нав’язуємо зайвих послуг і не збільшуємо бюджет без
+                потреби. Якщо завдання просте - воно має бути доступним.
+              </p>
+            </div>
+
+            <p class="text-center mt-4 text-muted">
+              Ніяких прихованих умов, дрібного шрифту чи обов’язкових апселів.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cases -->
+    <section class="py-5" id="cases">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Приклади проєктів і реальних рішень</h2>
+          <p class="lead mt-3">
+            Навіть у безкоштовних або бюджетних проєктах ми працюємо на
+            результат.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm bg-light">
+              <div class="card-body">
+                <h3 class="h5 card-title">Сайт секції карате</h3>
+                <p>
+                  <strong>Задача:</strong> презентація послуг і прийом
+                  онлайн-заявок
+                </p>
+                <p>
+                  <strong>Що зробили:</strong> структура послуг,
+                  базове SEO
+                </p>
+                <p class="fw-semibold">
+                  Результат: сайт готовий до трафіку і реклами
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm bg-light">
+              <div class="card-body">
+                <h3 class="h5 card-title">Сайт нутриціолога</h3>
+                <p>
+                  <strong>Задача:</strong> показати портфоліо і спростити запис
+                  клієнтів
+                </p>
+                <p>
+                  <strong>Що зробили:</strong> односторінковий сайт, форма
+                  запису, SEO-основа
+                </p>
+                <p class="fw-semibold">
+                  Результат: зручна презентація і автоматизація звернень
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm bg-light">
+              <div class="card-body">
+                <h3 class="h5 card-title">Сайт коуча</h3>
+                <p>
+                  <strong>Задача:</strong> онлайн-присутність і підготовка до
+                  монетизації
+                </p>
+                <p>
+                  <strong>Що зробили:</strong> сайт-візитівка, структура
+                  консультацій і курсів
+                </p>
+                <p class="fw-semibold">
+                  Результат: платформа готова до розвитку бренду
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-center mt-4 text-muted">
+          Частина проєктів - волонтерські або навчальні, але всі вони реальні і
+          робочі.
+        </p>
+      </div>
+    </section>
+
+    <!-- Not -->
+    <section class="py-5 bg-light" id="not-for-you">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-center mb-4">
+              <h2 class="fw-bold">Кому ми не підходимо</h2>
+              <p class="lead mt-3">
+                Ми за чесну співпрацю, тому одразу окреслюємо межі.
+              </p>
+            </div>
+
+            <ul class="list-unstyled card card-body shadow-sm">
+              <li class="mb-3">
+                <span class="me-2" style="color: #a98202; font-weight: 600"
+                  >✕</span
+                >
+                Потрібен дорогий бренд-сайт з великим бюджетом і жорсткими
+                дедлайнами
+              </li>
+              <li class="mb-3">
+                <span class="me-2" style="color: #a98202; font-weight: 600"
+                  >✕</span
+                >
+                Потрібен агресивний маркетинг із маніпуляціями або спамом
+              </li>
+              <li class="mb-3">
+                <span class="me-2" style="color: #a98202; font-weight: 600"
+                  >✕</span
+                >
+                Очікується миттєвий результат без участі з вашого боку
+              </li>
+              <li class="mb-3">
+                <span class="me-2" style="color: #a98202; font-weight: 600"
+                  >✕</span
+                >
+                Потрібна повна передача відповідальності без комунікації
+              </li>
+              <li class="mb-3">
+                <span class="me-2" style="color: #a98202; font-weight: 600"
+                  >✕</span
+                >
+                Хочеться рішення “як у корпорацій”, але без ресурсів
+              </li>
+            </ul>
+
+            <p class="text-center mt-4 text-muted">
+              Якщо вам близькі партнерство, прозорість і здоровий підхід - ми,
+              швидше за все, підійдемо одне одному.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Forma -->
+    <section
+      class="py-5 text-white"
+      id="contact"
+      style="background: linear-gradient(135deg, #a98202, #989479)"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center mb-4">
+            <h2 class="fw-bold">
+              Залиште заявку - ми підкажемо, з чого почати
+            </h2>
+            <p class="lead mt-3">
+              Безкоштовна консультація, без тиску і без нав’язаних послуг. Ми
+              просто розберемо вашу ситуацію і підкажемо оптимальний шлях.
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card shadow-lg border-0">
+              <div class="card-body p-4 text-dark">
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Ваше імʼя</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Як до вас звертатись"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="contact-info" class="form-label"
+                      >Контакт для звʼязку</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="contact-info"
+                      placeholder="Email або месенджер"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="message" class="form-label"
+                      >Коротко про задачу</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="4"
+                      placeholder="Сайт, SEO, чат-бот або просто консультація"
+                    ></textarea>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary w-100">
+                    Надіслати заявку
+                  </button>
+                </form>
+
+                <p class="text-center mt-3 text-muted small">
+                  Відповідаємо протягом 1–2 днів. Без спаму і без дзвінків без
+                  згоди.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8 text-center mt-4">
+            <p class="small">
+              🔹 Безкоштовно &nbsp;&nbsp; 🔹 Без зобов’язань &nbsp;&nbsp; 🔹
+              Можна просто поставити питання
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+  <footer class="footer pt-5 pb-4 text-white">
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <!-- Бренд -->
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3">
+            <span style="color:#a98202;">Freestyle</span> Studio
+          </h5>
+          <p class="small footer-text">
+            Доступні digital-рішення для бізнесу, стартапів і соціальних ініціатив.
+            Пояснюємо просто. Працюємо чесно.
+          </p>
+        </div>
+
+        <!-- Навігація -->
+        <div class="col-md-4">
+          <h6 class="fw-semibold mb-3">Навігація</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#services" class="footer-link">Послуги</a></li>
+            <li class="mb-2"><a href="#process" class="footer-link">Як працюємо</a></li>
+            <li class="mb-2"><a href="#cases" class="footer-link">Кейси</a></li>
+            <li class="mb-2"><a href="#why-free" class="footer-link">Чому безкоштовно</a></li>
+            <li><a href="#contact" class="footer-link">Заявка</a></li>
+          </ul>
+        </div>
+
+        <!-- Контакти -->
+        <div class="col-md-4">
+          <h6 class="fw-semibold mb-3">Звʼязок</h6>
+          <ul class="list-unstyled d-flex">
+
+            <li class="me-3">
+              <a href="https://www.facebook.com/278930211975650" class="text-white" target="_blank" rel="noopener">
+                <i class="bi bi-facebook fs-5"></i>
+              </a>
+            </li>
+
+            <li class="me-3">
+              <a href="https://www.instagram.com/freestylesoft/" class="text-white" target="_blank" rel="noopener">
+                <i class="bi bi-instagram fs-5"></i>
+              </a>
+            </li>
+
+            <li class="me-3">
+              <a href="https://t.me/freestylesoft" class="text-white" target="_blank" rel="noopener">
+                <i class="bi bi-telegram fs-5"></i>
+              </a>
+            </li>
+
+          </ul>
+
+          <p class="small footer-text mb-3">
+            🕒 Відповідь протягом 1–2 днів
+          </p>
+
+          <a href="#contact" class="btn btn-sm btn-outline-light">
+            Залишити заявку
+          </a>
+        </div>
+
+      </div>
+
+      <hr class="my-4" style="border-color:#374151;">
+
+      <div class="text-center footer-note">
+        © 2026 Freestyle Studio · Веб · Чат-боти · Маркетинг
+      </div>
+
+    </div>
+  </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
