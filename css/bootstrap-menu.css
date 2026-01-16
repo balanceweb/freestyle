@@ -1,0 +1,19 @@
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.6); /* темний нейтральний */
+  z-index: 1040;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Блокування скролу */
+body.menu-open {
+  overflow: hidden;
+}

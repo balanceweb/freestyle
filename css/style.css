@@ -21,6 +21,8 @@ body {
       min-height: 100vh;
       display: flex;
       align-items: center;
+      padding-top: 100px !important;
+
     }
     .hero .btn-cta {
       padding: 0.75rem 1.5rem;
@@ -31,6 +33,46 @@ body {
         text-align: center;
       }
     }
+
+/* #region Logo */
+.logo-font {
+  font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.navbar .logo-font {
+  font-size: 1.35rem;
+}
+
+.footer .logo-font {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+/* #endregion */
+
+/* #region Buger-icon */
+/* Прибираємо обводку та тінь з бургер-іконки */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+.navbar-toggler:focus-visible {
+  box-shadow: 0 0 0 2px rgba(169, 130, 2, 0.4);
+}
+
+/* Для блокування прокрутки при відкритому меню на смартфоні */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* #endregion */
 
 /* #region Navbar */
 /* Navbar */
