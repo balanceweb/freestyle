@@ -7,12 +7,20 @@
   --brand-yellow-secondary: #989479;
   --brand-grey: #555;
 
-    --brand-gradient: linear-gradient(135deg, var(--brand-yellow-main), var(--brand-yellow-secondary));
+  --brand-gradient: linear-gradient(135deg, var(--brand-yellow-main), var(--brand-yellow-secondary));
+  --navbar-height: 72px;
 }
 
 body {
+  padding-top: var(--navbar-height);
   color: #555;
 }
+
+section {
+  scroll-margin-top: calc(var(--navbar-height) + 0px);
+}
+
+
 
     .hero {
       /* фон */
@@ -21,7 +29,6 @@ body {
       min-height: 100vh;
       display: flex;
       align-items: center;
-      padding-top: 100px !important;
 
     }
     .hero .btn-cta {

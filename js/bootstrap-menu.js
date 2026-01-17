@@ -1,8 +1,25 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const navbar = document.querySelector(".navbar.fixed-top");
   const navbarCollapse = document.querySelector(".navbar-collapse");
-  if (!navbarCollapse) return;
 
-  /* Overlay */
+  if (!navbar || !navbarCollapse) return;
+
+  /* =========================
+     Navbar height (auto)
+     ========================= */
+  const setNavbarHeight = () => {
+    document.documentElement.style.setProperty(
+      "--navbar-height",
+      `${navbar.offsetHeight}px`
+    );
+  };
+
+  setNavbarHeight();
+  window.addEventListener("resize", setNavbarHeight);
+
+  /* =========================
+     Overlay
+     ========================= */
   const overlay = document.createElement("div");
   overlay.className = "menu-overlay";
   document.body.appendChild(overlay);
@@ -17,7 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.remove("menu-open");
   };
 
-  /* Bootstrap events */
   navbarCollapse.addEventListener("shown.bs.collapse", openMenu);
   navbarCollapse.addEventListener("hidden.bs.collapse", closeMenu);
 
@@ -26,7 +42,17 @@ document.addEventListener("DOMContentLoaded", () => {
     bootstrap.Collapse.getInstance(navbarCollapse)?.hide();
   });
 
-  /* Click on menu item */
+  /* Click outside navbar (fallback) */
+  document.addEventListener("click", (e) => {
+    if (
+      navbarCollapse.classList.contains("show") &&
+      !navbar.contains(e.target)
+    ) {
+      bootstrap.Collapse.getInstance(navbarCollapse)?.hide();
+    }
+  });
+
+  /* Click on menu link */
   document.querySelectorAll(".navbar-nav a").forEach((link) => {
     link.addEventListener("click", () => {
       bootstrap.Collapse.getInstance(navbarCollapse)?.hide();
