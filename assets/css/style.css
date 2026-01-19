@@ -1,0 +1,98 @@
+
+:root {
+  /* --brand-yellow-main: #FFCE1F;
+  --brand-yellow-secondary: #FFE37D; */
+
+  --brand-yellow-main:#a98202;
+  --brand-yellow-secondary: #989479;
+  --brand-grey: #555;
+
+  --brand-gradient: linear-gradient(135deg, var(--brand-yellow-main), var(--brand-yellow-secondary));
+  --navbar-height: 72px;
+}
+
+body {
+  color: #555;
+}
+
+    .hero {
+      /* фон */
+      background: linear-gradient(135deg, var(--brand-yellow-main), #989479);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+
+    }
+    .hero .btn-cta {
+      padding: 0.75rem 1.5rem;
+      font-size: 1.1rem;
+    }
+    @media (max-width: 767.98px) {
+      .hero {
+        text-align: center;
+      }
+    }
+
+/* #region Logo */
+.logo-font {
+  font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.navbar .logo-font {
+  font-size: 1.35rem;
+}
+
+.footer .logo-font {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+/* #endregion */
+
+/* #region Buger-icon */
+/* Прибираємо обводку та тінь з бургер-іконки */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+.navbar-toggler:focus-visible {
+  box-shadow: 0 0 0 2px rgba(169, 130, 2, 0.4);
+}
+
+/* Для блокування прокрутки при відкритому меню на смартфоні */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* #endregion */
+
+/* #region Navbar */
+/* Navbar */
+.navbar .nav-link {
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: var(--brand-yellow-main);
+}
+/* #endregion */
+
+.logo-freestyle {
+  color: var(--brand-grey);
+}
+
+.logo-studio {
+    color: var(--brand-yellow-main);
+}
+
+body {
+    background-color: rgba(169, 130, 2, 0.08); 
+}

@@ -1,0 +1,115 @@
+/* =========================
+   FOOTER — Freestyle Studio
+   ========================= */
+
+/* Кореневий контейнер футера */
+.site-footer {
+  background-color: #0f172a; /* темно-синій, нейтральний фон */
+  color: #cbd5e1;           /* базовий світлий текст */
+  font-size: 14px;
+}
+
+/* Посилання у футері */
+.site-footer a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.site-footer a:hover {
+  color: #a98202;           /* золотий акцент студії */
+  text-decoration: underline;
+  transform: translateY(-2px);
+}
+
+/* Основна сітка футера */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+/* Заголовки блоків */
+.footer-block h3,
+.footer-block h4 {
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* Текст бренду / опис */
+.footer-brand p {
+  max-width: 280px;
+  line-height: 1.5;
+  color: #94a3b8; /* менш акцентний текст */
+}
+
+/* Списки у футері */
+.footer-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-block li {
+  margin-bottom: 8px;
+}
+
+/* Нижня частина футера (copyright + політики) */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Список політик */
+.footer-legal {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+/* =========================
+   Mobile адаптація
+   ========================= */
+
+@media (max-width: 768px) {
+  /* Сітка футера — в один стовпчик */
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+
+  /* Нижня частина — вертикально */
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Політики — у стовпчик */
+  .footer-legal {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  /* Ховаємо елементи-розділювачі (•) */
+  .footer-policies ul li.mx-2 {
+    display: none;
+  }
+}

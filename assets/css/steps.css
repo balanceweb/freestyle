@@ -1,0 +1,34 @@
+.steps-section {
+  background-color: rgba(169, 130, 2, 0.08); 
+}
+
+/* Бейдж кроку — без фону та рамки */
+.step-badge {
+  color: #a98202;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Іконка біля тексту внизу */
+.step-icon {
+  font-size: 0.9rem;
+  color: #a98202; /* золотий акцент студії */
+  flex-shrink: 0;
+  padding-top: 1px;
+}
+
+/* Картка кроку */
+.step-card {
+  /* background-color: rgba(169, 130, 2, 0.08);  */
+  /* той самий світлий фон, що був у бейджа */
+  border: 1px solid rgba(169, 130, 2, 0.3); /* м’яка золота обводка */
+  /* border-radius: 12px; */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}

@@ -8,8 +8,11 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/bootstrap-menu.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+    <link rel="stylesheet" href="assets/css/steps.css">
 
     <!-- Основні мета-теги -->
     <meta
@@ -158,7 +161,7 @@
           <div class="col-md-6">
             <!-- зображення -->
             <img
-              src="images/hero.png"
+              src="assets/img/hero.png"
               alt="Freestyle Studio – послуги"
               class="img-fluid"
             />
@@ -168,7 +171,7 @@
     </section>
 
     <!-- For who -->
-    <section class="py-5">
+    <section class="py-5 for-who-section">
       <div class="container">
         <div class="text-center mb-5">
           <h2 class="fw-bold">
@@ -184,6 +187,9 @@
           <div class="col-md-6 col-lg-3">
             <div class="card h-100 shadow-sm bg-light">
               <div class="card-body">
+                <div class="mb-3 services-icon">
+                  <i class="bi bi-shop fs-2"></i>
+                </div>
                 <h5 class="card-title">Малий бізнес</h5>
                 <p class="card-text">
                   Сайт і базове SEO, щоб вас почали знаходити клієнти.
@@ -195,6 +201,9 @@
           <div class="col-md-6 col-lg-3">
             <div class="card h-100 shadow-sm bg-light">
               <div class="card-body">
+                <div class="mb-3 services-icon">
+                  <i class="bi bi-lightning-charge fs-2"></i>
+                </div>
                 <h5 class="card-title">Стартапи</h5>
                 <p class="card-text">
                   Лендинг або MVP для перевірки ідеї без великих витрат.
@@ -206,6 +215,9 @@
           <div class="col-md-6 col-lg-3">
             <div class="card h-100 shadow-sm bg-light">
               <div class="card-body">
+                <div class="mb-3 services-icon">
+                  <i class="bi bi-heart fs-2"></i>
+                </div>
                 <h5 class="card-title">Волонтерські проєкти</h5>
                 <p class="card-text">
                   Безкоштовні або пільгові рішення для корисних ініціатив.
@@ -217,6 +229,9 @@
           <div class="col-md-6 col-lg-3">
             <div class="card h-100 shadow-sm bg-light">
               <div class="card-body">
+                <div class="mb-3 services-icon">
+                  <i class="bi bi-person-badge fs-2"></i>
+                </div>
                 <h5 class="card-title">Експерти</h5>
                 <p class="card-text">
                   Сайт-візитка і заявки для особистого бренду.
@@ -243,6 +258,9 @@
           <div class="col-md-6 col-lg-3">
             <div class="card h-100 shadow-sm">
               <div class="card-body">
+                <div class="mb-3 services-icon">
+                  <i class="bi bi-window fs-1"></i>
+                </div>
                 <h3 class="h5 card-title">Сайти</h3>
                 <p class="card-text">
                   Щоб про вас дізнались, довіряли і могли легко залишити заявку.
@@ -254,6 +272,9 @@
           <div class="col-md-6 col-lg-3">
             <div class="card h-100 shadow-sm">
               <div class="card-body">
+                <div class="mb-3 services-icon">
+                  <i class="bi bi-graph-up-arrow fs-1"></i>
+                </div>
                 <h3 class="h5 card-title">SEO-оптимізація</h3>
                 <p class="card-text">
                   Щоб ваш сайт знаходили в Google і клієнти приходили самі.
@@ -265,6 +286,9 @@
           <div class="col-md-6 col-lg-3">
             <div class="card h-100 shadow-sm">
               <div class="card-body">
+                <div class="mb-3 services-icon">
+                  <i class="bi bi-chat-dots fs-1"></i>
+                </div>
                 <h3 class="h5 card-title">Чат-боти</h3>
                 <p class="card-text">
                   Щоб не відповідати на одні й ті самі питання і не втрачати
@@ -277,6 +301,9 @@
           <div class="col-md-6 col-lg-3">
             <div class="card h-100 shadow-sm">
               <div class="card-body">
+                <div class="mb-3 services-icon">
+                  <i class="bi bi-rocket-takeoff fs-1"></i>
+                </div>
                 <h3 class="h5 card-title">Маркетинг і запуск</h3>
                 <p class="card-text">
                   Щоб з’явилися перші клієнти навіть з мінімальним бюджетом.
@@ -294,7 +321,7 @@
     </section>
 
     <!-- Steps -->
-    <section class="py-5" id="process">
+    <section class="py-5 steps-section" id="process">
       <div class="container">
         <div class="text-center mb-5">
           <h2 class="fw-bold">Як це працює - 4 простих кроки</h2>
@@ -305,56 +332,62 @@
 
         <div class="row g-4">
           <div class="col-md-6 col-lg-3">
-            <div class="card h-100 border-0">
-              <div class="card-body">
-                <div class="fw-bold mb-2" style="color: #a98202">Крок 1</div>
+            <div class="card h-100 step-card bg-light">
+              <div class="card-body d-flex flex-column">
+                <div class="fw-bold mb-2 step-badge">Крок 1</div>
                 <h3 class="h5 card-title">Ви залишаєте заявку</h3>
                 <p class="card-text">
                   Коротко описуєте, що вам потрібно: сайт, SEO, чат-бот або
                   консультація.
                 </p>
-                <small class="text-muted">Безкоштовно і без зобов’язань</small>
+                <small class="text-muted mt-auto d-flex  gap-1">
+                  <i class="bi bi-check-circle-fill step-icon"></i>
+                  Безкоштовно і без зобов’язань
+                </small>
               </div>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3">
-            <div class="card h-100 border-0">
-              <div class="card-body">
-                <div class="fw-bold mb-2" style="color: #a98202">Крок 2</div>
+            <div class="card h-100 step-card bg-light">
+              <div class="card-body d-flex flex-column">
+                <div class="fw-bold mb-2 step-badge">Крок 2</div>
                 <h3 class="h5 card-title">Ми консультуємо</h3>
                 <p class="card-text">
                   Розбираємо вашу ситуацію і пояснюємо можливі варіанти простими
                   словами.
                 </p>
-                <small class="text-muted">Без технічного жаргону</small>
+                <small class="text-muted mt-auto d-flex gap-1">
+                  <i class="bi bi-check-circle-fill step-icon"></i>Без технічного жаргону</small>
               </div>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3">
-            <div class="card h-100 border-0">
-              <div class="card-body">
-                <div class="fw-bold mb-2" style="color: #a98202">Крок 3</div>
+            <div class="card h-100 step-card bg-light">
+              <div class="card-body d-flex flex-column">
+                <div class="fw-bold mb-2 step-badge">Крок 3</div>
                 <h3 class="h5 card-title">Пропонуємо рішення</h3>
                 <p class="card-text">
                   Підбираємо оптимальний формат - безкоштовний, бюджетний або
                   поетапний.
                 </p>
-                <small class="text-muted">Ви самі приймаєте рішення</small>
+                <small class="text-muted mt-auto d-flex gap-1">
+                  <i class="bi bi-check-circle-fill step-icon"></i>Ви самі приймаєте рішення</small>
               </div>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3">
-            <div class="card h-100 border-0">
-              <div class="card-body">
-                <div class="fw-bold mb-2" style="color: #a98202">Крок 4</div>
+            <div class="card h-100 step-card bg-light">
+              <div class="card-body d-flex flex-column">
+                <div class="fw-bold mb-2 step-badge">Крок 4</div>
                 <h3 class="h5 card-title">Реалізуємо або підказуємо</h3>
                 <p class="card-text">
                   Запускаємо проєкт або чесно радимо подальші кроки.
                 </p>
-                <small class="text-muted">Фокус на результат</small>
+                <small class="text-muted mt-auto d-flex gap-1">
+                  <i class="bi bi-check-circle-fill step-icon"></i>Фокус на результат</small>
               </div>
             </div>
           </div>
@@ -632,82 +665,127 @@
       </div>
     </section>
       
-  <footer class="footer pt-5 pb-4 text-white">
-    <div class="container">
 
-      <div class="row gy-4">
 
-        <!-- Бренд -->
-        <div class="col-md-4">
-          <h5 class="logo-font fw-bold mb-3">
-            <span style="color:#a98202;">Freestyle</span> Studio
-          </h5>
-          <p class="small footer-text">
-            Доступні digital-рішення для бізнесу, стартапів і соціальних ініціатив.
-            Пояснюємо просто. Працюємо чесно.
-          </p>
-        </div>
+<footer class="site-footer pt-5 pb-4 text-white">
+  <div class="container">
 
-        <!-- Навігація -->
-        <div class="col-md-4">
-          <h6 class="fw-semibold mb-3">Навігація</h6>
-          <ul class="list-unstyled small">
-            <li class="mb-2"><a href="#services" class="footer-link">Послуги</a></li>
-            <li class="mb-2"><a href="#process" class="footer-link">Як працюємо</a></li>
-            <li class="mb-2"><a href="#cases" class="footer-link">Кейси</a></li>
-            <li class="mb-2"><a href="#why-free" class="footer-link">Чому безкоштовно</a></li>
-            <li><a href="#contact" class="footer-link">Заявка</a></li>
-          </ul>
-        </div>
+    <div class="row gy-4">
 
-        <!-- Контакти -->
-        <div class="col-md-4">
-          <h6 class="fw-semibold mb-3">Звʼязок</h6>
-          <ul class="list-unstyled d-flex">
-
-            <li class="me-3">
-              <a href="https://www.facebook.com/278930211975650" class="text-white" target="_blank" rel="noopener">
-                <i class="bi bi-facebook fs-5"></i>
-              </a>
-            </li>
-
-            <li class="me-3">
-              <a href="https://www.instagram.com/freestylesoft/" class="text-white" target="_blank" rel="noopener">
-                <i class="bi bi-instagram fs-5"></i>
-              </a>
-            </li>
-
-            <li class="me-3">
-              <a href="https://t.me/freestylesoft" class="text-white" target="_blank" rel="noopener">
-                <i class="bi bi-telegram fs-5"></i>
-              </a>
-            </li>
-
-          </ul>
-
-          <p class="small footer-text mb-3">
-            🕒 Відповідь протягом 1–2 днів
-          </p>
-
-          <a href="#contact" class="btn btn-sm btn-outline-light">
-            Залишити заявку
-          </a>
-        </div>
-
+      <!-- Бренд -->
+      <div class="col-md-4">
+        <h5 class="logo-font fw-bold mb-3">
+          <span style="color:#a98202;">Freestyle</span> Studio
+        </h5>
+        <p class="small footer-text">
+          Доступні digital-рішення для бізнесу, стартапів і соціальних ініціатив.
+          Пояснюємо просто. Працюємо чесно.
+        </p>
       </div>
 
-      <hr class="my-4" style="border-color:#374151;">
+      <!-- Навігація -->
+      <div class="col-md-4">
+        <h6 class="fw-semibold mb-3">Навігація</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="#services" class="footer-link">Послуги</a></li>
+          <li class="mb-2"><a href="#process" class="footer-link">Як працюємо</a></li>
+          <li class="mb-2"><a href="#cases" class="footer-link">Кейси</a></li>
+          <li class="mb-2"><a href="#why-free" class="footer-link">Чому безкоштовно</a></li>
+          <li><a href="#contact" class="footer-link">Заявка</a></li>
+        </ul>
+      </div>
 
-      <div class="text-center footer-note">
-        © 2026 Freestyle Studio · Веб · Чат-боти · Маркетинг
+      <!-- Контакти та соцмережі -->
+      <div class="col-md-4">
+        <h6 class="fw-semibold mb-3">Звʼязок</h6>
+        <ul class="list-unstyled small mb-3">
+          <li class="mb-2 d-flex align-items-center">
+            <i class="bi bi-envelope-fill me-2"></i>
+            <a href="mailto:hello@freestyle.org.ua" class="footer-link">
+              hello@freestyle.org.ua
+            </a>
+          </li>
+          <li class="mb-2 d-flex align-items-center">
+            <i class="bi bi-telephone-fill me-2"></i>
+            <a href="tel:+380983199618" class="footer-link">+38 (098) 319-96-18
+            </a>
+          </li>
+        </ul>
+
+        <h6 class="fw-semibold mb-2">
+          Ми в мережі
+        </h6>
+        <ul class="list-unstyled d-flex gap-3 mb-0">
+          <li>
+            <a href="https://www.facebook.com/278930211975650"
+               class="text-white"
+               target="_blank"
+               rel="noopener"
+               aria-label="Facebook">
+              <i class="bi bi-facebook fs-5"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/freestylesoft/"
+               class="text-white"
+               target="_blank"
+               rel="noopener"
+               aria-label="Instagram">
+              <i class="bi bi-instagram fs-5"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/freestyle-studio"
+               class="text-white"
+               target="_blank"
+               rel="noopener"
+               aria-label="GitHub">
+              <i class="bi bi-github fs-5"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/freestylesoft"
+               class="text-white"
+               target="_blank"
+               rel="noopener"
+               aria-label="Telegram">
+              <i class="bi bi-telegram fs-5"></i>
+            </a>
+          </li>
+        </ul>
       </div>
 
     </div>
-  </footer>
+
+    <hr class="my-4" style="border-color:#374151;">
+
+    <div class="row align-items-center gy-2">
+      <!-- Права -->
+      <div class="col-md-6 text-md-start">
+        <p class="footer-note mb-0">
+          © 2026 Freestyle Studio. Всі права захищені.
+        </p>
+      </div>
+
+  <!-- Політики -->
+  <div class="col-md-6 text-md-end footer-policies">
+    <ul class="list-inline mb-0 small">
+      <li class="list-inline-item"><a href="/privacy-policy.html" class="footer-link">Політика конфіденційності</a></li>
+      <li class="list-inline-item mx-2">•</li>
+      <li class="list-inline-item"><a href="/terms.html" class="footer-link">Умови використання</a></li>
+      <li class="list-inline-item mx-2">•</li>
+      <li class="list-inline-item"><a href="/cookies.html" class="footer-link">Cookies</a></li>
+    </ul>
+  </div>
+
+
+  </div>
+</footer>
+
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap-menu.js"></script>
+    <script src="assets/js/navbar.js"></script>
   </body>
 </html>

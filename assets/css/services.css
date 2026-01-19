@@ -1,0 +1,14 @@
+#services .card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#services .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.services-icon {
+  color: var(--brand-yellow-main);
+  opacity: 0.9;
+}
+
