@@ -12,3 +12,64 @@
   opacity: 0.9;
 }
 
+/* ---- */
+
+/* Services */
+.service-item {
+  padding: 0 12px;
+}
+
+.service-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: rgba(169, 130, 2, 0.12); /* золото, дуже мʼяко */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-icon i {
+  font-size: 1.5rem;
+  color: #a98202;
+}
+
+/* ----- */
+/* Services hover effect */
+.service-item {
+  transition: transform 0.2s ease;
+}
+
+.service-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: rgba(169, 130, 2, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.service-icon i {
+  font-size: 1.5rem;
+  color: #a98202;
+}
+
+/* Hover тільки на desktop */
+@media (hover: hover) {
+  .service-item:hover .service-icon {
+    transform: scale(1.15);
+    background-color: rgba(169, 130, 2, 0.2);
+  }
+}
+
+@media (hover: hover) {
+  .service-item:hover .service-icon {
+    box-shadow: 0 8px 24px rgba(169, 130, 2, 0.25);
+  }
+}

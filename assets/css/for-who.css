@@ -1,0 +1,21 @@
+/* For who – квадратні іконки */
+.for-who-section .services-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px; /* мʼякий квадрат */
+  background-color: rgba(169, 130, 2, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.for-who-section .services-icon i {
+  color: #a98202;
+}
+
+/* Легкий hover — не обовʼязковий, але приємний */
+@media (hover: hover) {
+  .for-who-section .card:hover .services-icon {
+    background-color: rgba(169, 130, 2, 0.2);
+  }
+}
