@@ -1,3 +1,37 @@
+/* #region Buger-icon */
+/* Прибираємо обводку та тінь з бургер-іконки */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+.navbar-toggler:focus-visible {
+  box-shadow: 0 0 0 2px rgba(169, 130, 2, 0.4);
+}
+
+/* Для блокування прокрутки при відкритому меню на смартфоні */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* #endregion */
+
+/* #region Navbar */
+/* Navbar */
+.navbar .nav-link {
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: var(--brand-yellow-main);
+}
+/* #endregion */
+
 /* Navbar завжди поверх overlay */
 
 /* Відступ для висоти фіксованого меню */
@@ -43,4 +77,56 @@ section {
   body.menu-open {
     overflow: hidden;
   }
+}
+
+/* Бургер-меню */
+/* =========================
+   Custom burger animation
+========================= */
+.custom-toggler {
+  border: none;
+  background: transparent;
+  padding: 0.25rem;
+  width: 32px;
+  height: 24px;
+  position: relative;
+}
+
+.custom-toggler span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #212529;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  transition: all 0.25s ease;
+}
+
+/* позиції ліній */
+.custom-toggler span:nth-child(1) {
+  top: 0;
+}
+
+.custom-toggler span:nth-child(2) {
+  top: 11px;
+}
+
+.custom-toggler span:nth-child(3) {
+  bottom: 0;
+}
+
+/* ===== OPEN STATE ===== */
+.custom-toggler[aria-expanded="true"] span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 11px;
+}
+
+.custom-toggler[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.custom-toggler[aria-expanded="true"] span:nth-child(3) {
+  transform: rotate(-45deg);
+  bottom: 11px;
 }

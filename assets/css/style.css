@@ -52,39 +52,9 @@ body {
 
 /* #endregion */
 
-/* #region Buger-icon */
-/* Прибираємо обводку та тінь з бургер-іконки */
-.navbar-toggler {
-  border: none;
-}
 
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler:focus-visible {
-  outline: none;
-  box-shadow: none;
-}
-.navbar-toggler:focus-visible {
-  box-shadow: 0 0 0 2px rgba(169, 130, 2, 0.4);
-}
 
-/* Для блокування прокрутки при відкритому меню на смартфоні */
-body.menu-open {
-  overflow: hidden;
-}
 
-/* #endregion */
-
-/* #region Navbar */
-/* Navbar */
-.navbar .nav-link {
-  font-weight: 500;
-}
-
-.navbar .nav-link:hover {
-    color: var(--brand-yellow-main);
-}
-/* #endregion */
 
 .logo-freestyle {
   color: var(--brand-grey);
@@ -92,26 +62,4 @@ body.menu-open {
 
 .logo-studio {
     color: var(--brand-yellow-main);
-}
-
-/* Картка кроку */
-.light-card {
-  /* background-color: rgba(169, 130, 2, 0.08);  */
-  /* той самий світлий фон, що був у бейджа */
-  border: 1px solid rgba(169, 130, 2, 0.3); /* м’яка золота обводка */
-  /* border-radius: 12px; */
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.light-card:hover, .brand-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
-}
-
-.brand-card {
-  background-color: rgba(169, 130, 2, 0.08); 
-  /* той самий світлий фон, що був у бейджа */
-  border: 1px solid rgba(169, 130, 2, 0.3); /* м’яка золота обводка */
-  /* border-radius: 12px; */
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
