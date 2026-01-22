@@ -63,3 +63,7 @@ body {
 .logo-studio {
     color: var(--brand-yellow-main);
 }
+
+.text-brand {
+  color: #a98202;
+}

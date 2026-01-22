@@ -81,52 +81,59 @@ section {
 
 /* Бургер-меню */
 /* =========================
-   Custom burger animation
+   Custom burger animation (Optimized Size)
 ========================= */
 .custom-toggler {
   border: none;
   background: transparent;
-  padding: 0.25rem;
-  width: 32px;
-  height: 24px;
+  padding: 0;          /* прибираємо зайві відступи */
+  width: 24px;         /* було 32px, зменшили на 25% */
+  height: 18px;        /* пропорційна висота */
   position: relative;
+  transition: transform 0.2s ease;
+}
+
+/* Ефект натискання (зворотний зв'язок) */
+.custom-toggler:active {
+  transform: scale(0.9);
 }
 
 .custom-toggler span {
   display: block;
-  height: 2px;
+  height: 2px;         /* товщина ліній */
   width: 100%;
   background-color: #212529;
   border-radius: 2px;
   position: absolute;
   left: 0;
-  transition: all 0.25s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* позиції ліній */
+/* Позиціонування ліній для висоти 18px */
 .custom-toggler span:nth-child(1) {
   top: 0;
 }
 
 .custom-toggler span:nth-child(2) {
-  top: 11px;
+  top: 8px;            /* рівно посередині */
 }
 
 .custom-toggler span:nth-child(3) {
-  bottom: 0;
+  top: 16px;           /* низ */
 }
 
-/* ===== OPEN STATE ===== */
+/* ===== Стан "Відкрито" (Хрестик) ===== */
 .custom-toggler[aria-expanded="true"] span:nth-child(1) {
   transform: rotate(45deg);
-  top: 11px;
+  top: 8px;            /* зводимо лінії в центр */
 }
 
 .custom-toggler[aria-expanded="true"] span:nth-child(2) {
   opacity: 0;
+  transform: translateX(-10px); /* елегантне зникнення вбік */
 }
 
 .custom-toggler[aria-expanded="true"] span:nth-child(3) {
   transform: rotate(-45deg);
-  bottom: 11px;
+  top: 8px;            /* зводимо лінії в центр */
 }
