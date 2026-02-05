@@ -1,4 +1,7 @@
 
+let fArr32 = () => console.log("fArr32 => ", "Make!");
+fArr32();
+
 let fArr31 = () => console.log("fArr31 => ", "Write code!..");
 fArr31();
 
